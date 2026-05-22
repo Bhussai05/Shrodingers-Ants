@@ -1,8 +1,9 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
+import diptest as diptest
 
-epsilon = 1
-mu = 2
+epsilon = 2
+mu = 1
 time = 50
 x0 = 0.2
 
@@ -28,8 +29,11 @@ for i in range(1, len(tarray)):
 
 
 fig1 = plt.plot(tarray, xarray)
+
 plt.show()
 
+fig2 = plt.hist(xarray, bins=500, density= True)
+plt.show()
 
     
     
